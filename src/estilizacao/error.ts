@@ -3,6 +3,8 @@ const ErrorPage=styled.div`
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400&display=swap");
     .backgroundAnimation{
     position: absolute;
+    top: 0%;
+    left: 0%;
     width: 100%;
     height: 100%;
     z-index: 0;

@@ -3,6 +3,8 @@ import styled from "styled-components";
 const Style = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400&display=swap");
   .backgroundAnimation{
+    top: 0%;
+    left: 0%;
     position: fixed;
     width: 100%;
     height: 100%;
