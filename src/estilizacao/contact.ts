@@ -10,12 +10,12 @@ const ContactS = styled.div`
     flex-direction: column;
     padding: 2rem;
     background-color: transparent;
-    height: 100vh;
+    min-height: 100vh; /* Garante que o container ocupe a altura total da tela */
     width: 100%;
-    position: absolute;
-    top: 25%;
-    left: 0%;
+    position: relative; /* Mudei de absolute para relative para melhorar o fluxo do layout */
+    top: 0; /* Remove o top: 25% */
     z-index: 100;
+    overflow-x: hidden; /* Impede o conteúdo de ultrapassar horizontalmente */
   }
 
   .content {
@@ -141,16 +141,17 @@ const ContactS = styled.div`
     height: 100%;
     z-index: 0;
   }
+
   .message {
-  font-family: "Inter", sans-serif;
-  font-size: 1.2rem;
-  color: white; /* Cor do texto */
-  background-color: transparent; /* Fundo transparente para destacar o brilho da borda */
-  padding: 10px; /* Espaçamento interno para melhorar a estética */
-  border-radius: 5px; /* Bordas arredondadas, opcional */
-  transition: all 0.3s ease-in-out; /* Transições suaves para todos os efeitos */
-  text-shadow: 0 0 5px #8a2be2, 0 0 10px #8a2be2, 0 0 15px #8a2be2, 0 0 20px #8a2be2;
-}
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    color: white; /* Cor do texto */
+    background-color: transparent; /* Fundo transparente para destacar o brilho da borda */
+    padding: 10px; /* Espaçamento interno para melhorar a estética */
+    border-radius: 5px; /* Bordas arredondadas, opcional */
+    transition: all 0.3s ease-in-out; /* Transições suaves para todos os efeitos */
+    text-shadow: 0 0 5px #8a2be2, 0 0 10px #8a2be2, 0 0 15px #8a2be2, 0 0 20px #8a2be2;
+  }
 
   /* Responsividade para telas menores */
   @media (max-width: 768px) {

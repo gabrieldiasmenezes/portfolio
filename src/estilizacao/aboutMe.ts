@@ -26,6 +26,7 @@ const AboutMe = styled.div`
         padding: 20px;
         z-index: 100;
         gap: 60px;
+        overflow-x: hidden;
     }
 
     .textIntro {
