@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+# Gabriel Dias Menezes - Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém o meu portfólio pessoal, desenvolvido com React, TypeScript, e estilizado com Styled Components. O objetivo do portfólio é apresentar minhas habilidades e projetos como desenvolvedor front-end, incluindo animações 3D interativas feitas com Spline e uma interface moderna com navegação intuitiva.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Página Inicial**: Animação 3D interativa com temas dinâmicos para cada seção do portfólio.
+- **Seção "Sobre Mim"**: Informações sobre minha trajetória e habilidades, com animações detalhadas.
+- **Projetos**: Exibição dos projetos que desenvolvi ao longo da minha jornada.
+- **Contato**: Formulário de contato funcional para enviar mensagens diretamente para o meu e-mail.
+- **Modo Claro/Escuro**: Alternância de tema para melhorar a experiência do usuário.
 
-## Expanding the ESLint configuration
+## Tecnologias Usadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **Styled Components**: Biblioteca para estilização de componentes React usando CSS-in-JS.
+- **Spline**: Ferramenta para criação de animações 3D interativas no site.
+- **EmailJS**: Serviço para envio de e-mails através do formulário de contato.
 
-- Configure the top-level `parserOptions` property like this:
+## Rodando o Projeto Localmente
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Para rodar o projeto localmente, siga os passos abaixo:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Clone o repositório**:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   No terminal, clone o repositório para sua máquina local:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ```bash
+   git clone https://github.com/gabrieldiasmenezes/portfolio.git
