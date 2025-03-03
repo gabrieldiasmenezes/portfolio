@@ -14,6 +14,7 @@ const ContactS = styled.div`
     width: 100%;
     position: absolute;
     top: 25%;
+    z-index: 100;
   }
 
   .content {

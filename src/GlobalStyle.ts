@@ -10,7 +10,8 @@ const GlobalStyle = createGlobalStyle`
     html, body {
         width: 100vw;
         min-height: 100vh;
-        overflow-x: hidden; /* 🚀 Impede a barra horizontal */
+        overflow-x: hidden; 
+        overflow-y: auto;
     }
 
     #root {
@@ -18,7 +19,10 @@ const GlobalStyle = createGlobalStyle`
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        overflow-x: hidden; /* 🚀 Garante que nenhum elemento dentro do root cause overflow */
+        overflow-x: hidden;
+    }
+    body, html {
+        overflow-x: hidden; 
     }
 `;
 
