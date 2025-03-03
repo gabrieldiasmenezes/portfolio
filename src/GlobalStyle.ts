@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
     }
     body, html {
-        overflow-x: hidden; 
+        overflow-x: hidden; /* Garantir que nenhuma rolagem horizontal seja permitida */
     }
 `;
 

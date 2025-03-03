@@ -12,16 +12,16 @@ const ProjectsS = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        position: absolute;
-        left: 0%;
+        position: relative; /* Altere para relative em vez de absolute */
         top: 20%;
-        overflow: hidden;
+        left: 0%;
+        overflow-x: hidden; /* Impede rolagem horizontal */
         z-index: 100;
     }
 
     .content {
         width: 100%;
-        max-width: 100vw;
+        max-width: 1200px; /* Definir um limite de largura para o conteúdo */
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -37,6 +37,7 @@ const ProjectsS = styled.div`
         margin-bottom: 30px;
         color: #ffffff;
     }
+
     .subHeading {
         font-size: 1.5rem;
         color: #ffffff;
@@ -51,13 +52,16 @@ const ProjectsS = styled.div`
         justify-content: center;
         flex-direction: column;
     }
-    .linkP{text-decoration:none}
+
+    .linkP {
+        text-decoration: none;
+    }
 
     .repoBox {
         background: rgba(255, 136, 0, 0.2);
         border: 2px solid #ff8800;
         border-radius: 20px;
-        width: 100%;
+        width: 100%; /* Diminuindo a largura das boxes */
         min-height: 150px;
         display: flex;
         justify-content: center;
@@ -77,7 +81,7 @@ const ProjectsS = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 80%;
+        width: 100%;
     }
 
     .repoImage {
@@ -104,7 +108,7 @@ const ProjectsS = styled.div`
 
     .repoDescription {
         font-size: 1rem;
-        width: 30%;
+        width: 50%; /* Ajuste a largura da descrição para caber melhor na box */
         opacity: 0.8;
         color: #ffffff;
     }
@@ -115,7 +119,7 @@ const ProjectsS = styled.div`
         left: 0%;
         width: 100%;
         height: 100%;
-        z-index:0;
+        z-index: 0;
     }
 `;
 

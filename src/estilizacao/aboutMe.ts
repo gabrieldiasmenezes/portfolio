@@ -82,6 +82,7 @@ const AboutMe = styled.div`
         display: flex;
         width: 100%;
         height: 10%;
+        left: 0%;
         top: 90%;
         color: transparent;
         background: linear-gradient(to bottom, transparent, #fff);

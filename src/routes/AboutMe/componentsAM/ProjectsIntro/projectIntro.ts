@@ -49,7 +49,7 @@ const ProjectsI = styled.div`
     text-decoration: none;
     transition: all 0.3s ease;
     width: 100%;
-    max-width: 800px;  /* Diminui o tamanho da box */
+    max-width: 80%;  /* Diminui o tamanho da box */
     margin: 0 auto;
   }
 
