@@ -89,6 +89,7 @@ const AboutMe = styled.div`
     }
     .components{
         position: absolute;
+        left: 0%;
         top: 100%;
         display: flex;
         flex-direction: column;

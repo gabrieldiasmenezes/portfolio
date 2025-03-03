@@ -13,6 +13,7 @@ const ProjectsS = styled.div`
         align-items: center;
         justify-content: center;
         position: absolute;
+        left: 0%;
         top: 20%;
         overflow: hidden;
         z-index: 100;
