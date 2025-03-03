@@ -28,3 +28,19 @@ Para rodar o projeto localmente, siga os passos abaixo:
 
    ```bash
    git clone https://github.com/gabrieldiasmenezes/portfolio.git
+
+2. **Instale as dependências**:
+
+   Navegue até o diretório do projeto e instale as dependências necessárias com o npm:
+
+   ```bash
+   cd portfolio npm install
+
+3. **Inicie o servidor de desenvolvimento**:
+
+   Após a instalação das dependências, inicie o servidor de desenvolvimento com o seguinte comando:
+
+   ```bash
+   npm run dev
+
+   
