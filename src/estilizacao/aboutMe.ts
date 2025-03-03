@@ -18,7 +18,7 @@ const AboutMe = styled.div`
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
-        max-width: 1000px;
+        max-width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;

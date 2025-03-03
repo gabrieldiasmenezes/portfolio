@@ -20,7 +20,7 @@ const ProjectsS = styled.div`
 
     .content {
         width: 100%;
-        max-width: 1200px;
+        max-width: 100vw;
         text-align: center;
         display: flex;
         flex-direction: column;

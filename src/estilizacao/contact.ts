@@ -21,7 +21,7 @@ const ContactS = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 900px;
+    max-width: 90vw;
     width: 100%;
   }
 

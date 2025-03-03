@@ -31,7 +31,7 @@ const AboutMeCont = styled.div`
         align-items: center;
         gap: 20px;
         width: 100%;
-        max-width: 1200px;
+        max-width: 100vw;
         margin: 0 auto;
     }
 
