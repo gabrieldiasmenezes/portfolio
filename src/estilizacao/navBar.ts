@@ -111,7 +111,7 @@ const NavBarS = styled.div`
     left: 15px;
     display: flex;
     gap: 8px;
-    z-index: 100;
+    z-index: 102;
   }
 
   .icons {
