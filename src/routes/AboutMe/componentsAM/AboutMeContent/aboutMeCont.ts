@@ -10,7 +10,6 @@ const AboutMeCont = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 40px;
         padding: 40px 20px;
         width: 100%;
         min-height: 80vh;
@@ -29,7 +28,6 @@ const AboutMeCont = styled.div`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 20px;
         width: 100%;
         max-width: 100%;
         margin: 0 auto;

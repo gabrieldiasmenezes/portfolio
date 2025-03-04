@@ -13,7 +13,8 @@ const ContactS = styled.div`
     min-height: 100vh; /* Garante que o container ocupe a altura total da tela */
     width: 100%;
     position: relative; /* Mudei de absolute para relative para melhorar o fluxo do layout */
-    top: 0; /* Remove o top: 25% */
+    top: 0%; /* Remove o top: 25% */
+    left: 0%;
     z-index: 100;
     overflow-x: hidden; /* Impede o conteúdo de ultrapassar horizontalmente */
   }
@@ -22,8 +23,7 @@ const ContactS = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 90%;
-    width: 100%;
+    width: 90%;
   }
 
   .heading {
@@ -80,16 +80,15 @@ const ContactS = styled.div`
   .contactForm {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    gap: 1.5rem;
+    width: 90%;
+    gap: 10px;
     background-color: rgba(255, 255, 255, 0.1); /* Vidro fosco */
-    padding: 2rem;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 255, 0.6), 0 0 20px rgba(0, 0, 255, 0.4);
     backdrop-filter: blur(5px); /* Efeito vidro fosco */
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: background-color 0.3s ease-in-out;
-    margin-bottom: 3rem;
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.2); /* Muda um pouco o fundo ao passar o mouse */

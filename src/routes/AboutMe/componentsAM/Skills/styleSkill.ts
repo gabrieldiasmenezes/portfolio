@@ -24,20 +24,18 @@ const StyleSkill = styled.div`
 
     .hardSkills {
         background: linear-gradient(to bottom,rgb(26, 188, 39), rgb(14, 100, 21)); /* Gradiente de branco para verde claro */
-        padding: 50px 20px; /* Deixa a box mais espaçada */
         gap: 40px;
     }
 
     .softSkills {
         background: linear-gradient(to bottom, rgb(14, 100, 21), rgb(0, 0, 0)); /* Gradiente de verde para preto (ou verde escuro) */
-        padding: 100px 70px;
         gap: 20px;
     }
 
     .skillsContainer {
         display: flex;
         justify-content: center;
-        gap: 50px; /* Ajuste do espaçamento entre as skills */
+        gap: 40px; /* Ajuste do espaçamento entre as skills */
         flex-wrap: wrap;
     }
 

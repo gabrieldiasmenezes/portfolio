@@ -8,7 +8,6 @@ const ProjectsI = styled.div`
     flex-direction: column;
     gap: 30px;
     width: 100%;
-    margin: 0 auto;
     padding: 40px;
     background: linear-gradient(to bottom, rgb(14, 100, 21), rgb(26, 188, 39));
     align-items: center;
