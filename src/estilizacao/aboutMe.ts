@@ -17,15 +17,15 @@ const AboutMe = styled.div`
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 100%;
-        max-width: 100vw;
+        width: 90%;
+        max-width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 20px;
         z-index: 100;
-        gap: 60px;
+        gap: 50px;
         overflow-x: hidden;
     }
 
