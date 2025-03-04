@@ -36,7 +36,7 @@ export default function SobreMim(){
                 <a className="cv" href="/pdfs/curriculo.pdf">{texts[languages].button}</a>
             </button>
         </header>
-        <div className="degrade">o</div>
+         <div className="degrade">o</div>
         <section className="components">
         {/* Seção sobre mim */}
         <AboutMeContent languages={languages}/>
