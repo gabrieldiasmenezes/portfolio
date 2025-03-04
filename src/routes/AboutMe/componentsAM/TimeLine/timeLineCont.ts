@@ -12,7 +12,6 @@ export const TimeLineCont = styled.div`
     height: 60vh;
     gap: 50px;
     background: linear-gradient(to bottom, rgb(0, 0, 0), transparent, black);
-    border: 1px solid black;
     padding: 20px;
     overflow-x: hidden;
   }
