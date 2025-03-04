@@ -6,7 +6,7 @@ const ProjectsI = styled.div`
   .proj {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    grid-column-gap: 30px;
     width: 100%;
     padding: 40px;
     background: linear-gradient(to bottom, rgb(14, 100, 21), rgb(26, 188, 39));
