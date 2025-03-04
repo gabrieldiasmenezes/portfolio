@@ -11,7 +11,7 @@ const ContactS = styled.div`
     padding: 2rem;
     background-color: transparent;
     min-height: 100vh; /* Garante que o container ocupe a altura total da tela */
-    width: 99%;
+    width: 100%;
     position: relative; /* Mudei de absolute para relative para melhorar o fluxo do layout */
     top: 0%; /* Remove o top: 25% */
     left: 0%;
