@@ -81,7 +81,7 @@ const AboutMe = styled.div`
     .degrade {
         position: absolute;
         display: flex;
-        width: 99%;
+        width: 100%;
         height: 10%;
         left: 0%;
         top: 90%;
@@ -95,7 +95,7 @@ const AboutMe = styled.div`
         top: 100%;
         display: flex;
         flex-direction: column;
-        width: 99%;
+        width: 95%;
         z-index: 100;
     }
     /* Media Queries for Responsiveness */
