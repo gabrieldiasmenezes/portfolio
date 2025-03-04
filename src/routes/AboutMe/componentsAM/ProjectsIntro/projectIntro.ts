@@ -13,6 +13,7 @@ const ProjectsI = styled.div`
     background: linear-gradient(to bottom, rgb(14, 100, 21), rgb(26, 188, 39));
     align-items: center;
     z-index: 100;
+    overflow-x: hidden;
   }
 
   .proj-header {

@@ -22,7 +22,7 @@ const ContactS = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 90vw;
+    max-width: 90%;
     width: 100%;
   }
 

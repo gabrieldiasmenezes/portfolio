@@ -19,6 +19,7 @@ const StyleSkill = styled.div`
         align-items: center;
         width: 100%;
         z-index: 100;
+        overflow-x: hidden;
     }
 
     .hardSkills {

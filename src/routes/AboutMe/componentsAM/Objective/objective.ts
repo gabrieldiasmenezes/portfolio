@@ -13,6 +13,7 @@ const ObjectiveSty = styled.div`
         gap: 40px;
         padding: 40px 20px;
         width: 100%;
+        overflow-x: hidden;
     }
 
     .titleObjective {
@@ -30,7 +31,7 @@ const ObjectiveSty = styled.div`
         align-items: center;
         gap: 20px;
         width: 100%;
-        max-width: 100vw;
+        max-width: 100%;
         margin: 0 auto;
 
         @media (max-width: 1024px) {
