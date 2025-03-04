@@ -95,7 +95,7 @@ const AboutMe = styled.div`
         top: 100%;
         display: flex;
         flex-direction: column;
-        width: 100vw;
+        width: 97%;
         max-width: 100%;
         z-index: 100;
     }
