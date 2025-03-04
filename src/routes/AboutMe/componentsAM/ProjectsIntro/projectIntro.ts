@@ -6,9 +6,8 @@ const ProjectsI = styled.div`
   .proj {
     display: flex;
     flex-direction: column;
-    grid-column-gap: 30px;
     width: 100%;
-    padding: 40px;
+    padding: 20px;
     background: linear-gradient(to bottom, rgb(14, 100, 21), rgb(26, 188, 39));
     align-items: center;
     z-index: 100;
@@ -23,7 +22,7 @@ const ProjectsI = styled.div`
   .proj-title {
     font-family: 'Poppins', sans-serif;
     font-size: 2.2em;  /* Reduzi o tamanho da fonte */
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     width: 100%;
     color: #ffffff;
