@@ -3,6 +3,7 @@ import styled from "styled-components";
 const AboutMe = styled.div`
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400&display=swap");
 
+    /* Background Animation */
     .backgroundAnimation {
         position: fixed;
         top: 0%;
@@ -89,7 +90,9 @@ const AboutMe = styled.div`
         background: linear-gradient(to bottom, transparent, #fff);
         z-index: 100;
     }
-    .components{
+
+    /* Components Styling */
+    .components {
         position: absolute;
         left: 0%;
         top: 100%;
@@ -98,9 +101,10 @@ const AboutMe = styled.div`
         width: 97%;
         max-width: 100%;
         z-index: 100;
+        gap: 0px; /* Diminuindo o espaço entre os itens nos componentes */
     }
-    /* Media Queries for Responsiveness */
 
+    /* Media Queries for Responsiveness */
     @media (max-width: 1024px) {
         .Intro {
             gap: 40px;
@@ -112,6 +116,9 @@ const AboutMe = styled.div`
         .buttonIntro {
             font-size: 1.1em;
             padding: 8px 16px;
+        }
+        .components {
+            gap: 0px; /* Mais espaço nos componentes */
         }
     }
 
@@ -127,6 +134,9 @@ const AboutMe = styled.div`
             font-size: 1em;
             padding: 8px 14px;
         }
+        .components {
+            gap: 0px; /* Mais espaço nos componentes */
+        }
     }
 
     @media (max-width: 480px) {
@@ -140,6 +150,9 @@ const AboutMe = styled.div`
         .buttonIntro {
             font-size: 0.9em;
             padding: 6px 12px;
+        }
+        .components {
+            gap: 0px; /* Ajustando o espaço nos componentes */
         }
     }
 `;

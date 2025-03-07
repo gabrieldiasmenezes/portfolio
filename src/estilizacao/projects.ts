@@ -12,20 +12,21 @@ const ProjectsS = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        position: relative; /* Altere para relative em vez de absolute */
+        position: relative;
         top: 20%;
         left: 0%;
-        overflow-x: hidden; /* Impede rolagem horizontal */
+        overflow-x: hidden;
         z-index: 100;
     }
 
     .content {
         width: 100%;
-        max-width: 1200px; /* Definir um limite de largura para o conteúdo */
+        max-width: 1200px;
         text-align: center;
         display: flex;
         flex-direction: column;
         gap: 50px;
+        padding: 0 15px; /* Adiciona um pouco de padding para que o conteúdo não fique colado nas bordas da tela */
     }
 
     .heading {
@@ -48,9 +49,9 @@ const ProjectsS = styled.div`
     .repoContainer {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        flex-direction: column;
+        gap: 40px; /* Maior espaçamento entre as boxes */
+        justify-content: center; /* Centraliza as boxes */
+        flex-direction: row;
     }
 
     .linkP {
@@ -61,12 +62,12 @@ const ProjectsS = styled.div`
         background: rgba(255, 136, 0, 0.2);
         border: 2px solid #ff8800;
         border-radius: 20px;
-        width: 100%; /* Diminuindo a largura das boxes */
-        min-height: 150px;
+        width: 100%;
+        min-height: 200px; /* Aumenta a altura mínima das boxes */
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 15px;
+        padding: 20px;
         transition: transform 0.3s, box-shadow 0.3s;
         position: relative;
         overflow: hidden;
@@ -82,6 +83,8 @@ const ProjectsS = styled.div`
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        gap: 30px; /* Aumenta o espaçamento entre os elementos dentro da box */
+        flex-direction: row;
     }
 
     .repoImage {
@@ -108,7 +111,7 @@ const ProjectsS = styled.div`
 
     .repoDescription {
         font-size: 1rem;
-        width: 50%; /* Ajuste a largura da descrição para caber melhor na box */
+        width: 50%;
         opacity: 0.8;
         color: #ffffff;
     }
@@ -120,6 +123,146 @@ const ProjectsS = styled.div`
         width: 100%;
         height: 100%;
         z-index: 0;
+    }
+
+    /* --- Responsividade --- */
+
+    @media (max-width: 1200px) {
+        .content {
+            max-width: 100%; /* Remove a largura máxima para dispositivos menores */
+            padding: 0 20px;
+        }
+
+        .heading {
+            font-size: 2rem;
+        }
+
+        .repoBox {
+            min-height: 180px;
+            padding: 20px;
+        }
+
+        .repoTitle {
+            font-size: 1.6rem;
+        }
+
+        .repoDescription {
+            font-size: 0.9rem;
+            width: 60%;
+        }
+
+        .repoImage {
+            width: 150px;
+            height: 90px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .heading {
+            font-size: 1.8rem;
+        }
+
+        .subHeading {
+            font-size: 1.3rem;
+        }
+
+        .repoBox {
+            min-height: 150px;
+            padding: 20px;
+        }
+
+        .repoImage {
+            width: 120px;
+            height: 80px;
+        }
+
+        .repoTitle {
+            font-size: 1.4rem;
+        }
+
+        .repoDescription {
+            width: 70%;
+        }
+
+        .repoContent {
+            flex-direction: column;
+            align-items: center; /* Centraliza os elementos dentro da box */
+            gap: 20px; /* Aumenta o espaçamento entre os itens */
+        }
+
+        .repoImage {
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .heading {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+
+        .subHeading {
+            font-size: 1.2rem;
+        }
+
+        .repoBox {
+            min-height: 130px;
+            padding: 15px;
+        }
+
+        .repoImage {
+            width: 100px;
+            height: 60px;
+        }
+
+        .repoTitle {
+            font-size: 1.2rem;
+        }
+
+        .repoDescription {
+            font-size: 0.8rem;
+            width: 80%;
+        }
+
+        .repoContainer {
+            gap: 30px; /* Aumenta o espaçamento entre as boxes */
+        }
+
+        .repoContent {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px; /* Aumenta o espaçamento entre os itens */
+        }
+    }
+
+    @media (max-width: 400px) {
+        .heading {
+            font-size: 1.4rem;
+        }
+
+        .repoBox {
+            min-height: 120px;
+            padding: 10px;
+        }
+
+        .repoImage {
+            width: 80px;
+            height: 50px;
+        }
+
+        .repoDescription {
+            font-size: 0.7rem;
+        }
+
+        .repoContainer {
+            gap: 40px; /* Mais espaço entre as boxes */
+        }
+
+        .repoContent {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
     }
 `;
 
