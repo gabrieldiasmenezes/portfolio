@@ -2,12 +2,12 @@ import { useState } from "react";
 import NavBar from "../../components/navBar";
 import AboutMe from "../../estilizacao/aboutMe";
 import Spline from "@splinetool/react-spline";
-import AboutMeContent from "./componentsAM/AboutMeContent";
-import HardSkills from "./componentsAM/Skills/hardSkills";
-import SoftSkills from "./componentsAM/Skills/softSkills";
-import Timeline from "./componentsAM/TimeLine";
-import Objective from "./componentsAM/Objective";
-import ProjectsIntro from "./componentsAM/ProjectsIntro";
+// import AboutMeContent from "./componentsAM/AboutMeContent";
+// import HardSkills from "./componentsAM/Skills/hardSkills";
+// import SoftSkills from "./componentsAM/Skills/softSkills";
+// import Timeline from "./componentsAM/TimeLine";
+// import Objective from "./componentsAM/Objective";
+// import ProjectsIntro from "./componentsAM/ProjectsIntro";
 import { Download } from "lucide-react"; 
 export default function SobreMim(){
     const texts={
