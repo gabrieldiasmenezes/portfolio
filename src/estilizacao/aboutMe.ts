@@ -78,8 +78,18 @@ const AboutMe = styled.div`
     .cv:hover {
         color: black;
     }
+    .components{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        left: 0%;
+        top: 100%;
+        border:1px solid white;
+        z-index: 100;
+    }
 
-    .degrade {
+    /* .degrade {
         position: absolute;
         display: flex;
         width: 100%;
@@ -89,10 +99,10 @@ const AboutMe = styled.div`
         color: transparent;
         background: linear-gradient(to bottom, transparent, #fff);
         z-index: 100;
-    }
+    } */
 
     /* Components Styling */
-    .components {
+    /* .components {
         position: absolute;
         left: 0%;
         top: 100%;
@@ -101,8 +111,8 @@ const AboutMe = styled.div`
         width: 97%;
         max-width: 100%;
         z-index: 100;
-        gap: 0px; /* Diminuindo o espaço entre os itens nos componentes */
-    }
+        gap: 0px;
+    } */
 
     /* Media Queries for Responsiveness */
     @media (max-width: 1024px) {

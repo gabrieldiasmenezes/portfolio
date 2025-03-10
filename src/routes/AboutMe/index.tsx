@@ -26,37 +26,34 @@ export default function SobreMim(){
     }
     return(
         <AboutMe>
-            <main className="boxPrincipal">
-
-                <NavBar changeLanguage={changeLanguages} languages={languages} />
+            <NavBar changeLanguage={changeLanguages} languages={languages} />
                     
-                {/* Introdução */}
-                <header className="Intro">
-                    <h1 className="textIntro">{texts[languages].title}</h1>
-                    <button className="buttonIntro" aria-label="Desça para ver minha jornada">
-                        <Download className="icon" size={30} />
-                        <a className="cv" href="/pdfs/curriculo.pdf">{texts[languages].button}</a>
-                    </button>
-                </header>
-                <div className="degrade">o</div>
-                <section className="components">
-                {/* Seção sobre mim */}
-                <AboutMeContent languages={languages}/>
-                {/* Hard Skills */}
-                <HardSkills languages={languages}/>
-                {/* Soft Skills */}
-                <SoftSkills languages={languages}/>
-                {/* Timeline dos cursos que fiz */}
-                <Timeline languages={languages}/>
-                {/* Objetivos profissionais */}
-                <Objective languages={languages}/>
-                {/* Introdução aos meus projetos */}
-                <ProjectsIntro languages={languages}/>
-                {/* Icones de contato */}
-                </section>
-                {/* Animação 3D */}
-            </main>
-                <Spline className="backgroundAnimation" scene="https://prod.spline.design/b9EhrOrNMBuhMUKL/scene.splinecode" />
+            {/* Introdução */}
+            <header className="Intro">
+                <h1 className="textIntro">{texts[languages].title}</h1>
+                <button className="buttonIntro" aria-label="Desça para ver minha jornada">
+                    <Download className="icon" size={30} />
+                    <a className="cv" href="/pdfs/curriculo.pdf">{texts[languages].button}</a>
+                </button>
+            </header>
+            {/* <div className="degrade">o</div> */}
+            <section className="components">
+            {/* Seção sobre mim */}
+            {/* <AboutMeContent languages={languages}/> */}
+            {/* Hard Skills */}
+            {/* <HardSkills languages={languages}/> */}
+            {/* Soft Skills */}
+            {/* <SoftSkills languages={languages}/> */}
+            {/* Timeline dos cursos que fiz */}
+            {/* <Timeline languages={languages}/> */}
+            {/* Objetivos profissionais */}
+            {/* <Objective languages={languages}/> */}
+            {/* Introdução aos meus projetos */}
+            {/* <ProjectsIntro languages={languages}/> */}
+            {/* Icones de contato */}
+            </section>
+            {/* Animação 3D */}
+            <Spline className="backgroundAnimation" scene="https://prod.spline.design/b9EhrOrNMBuhMUKL/scene.splinecode" />
         </AboutMe>
     );
 }
