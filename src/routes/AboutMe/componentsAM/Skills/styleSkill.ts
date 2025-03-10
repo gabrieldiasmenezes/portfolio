@@ -17,9 +17,7 @@ const StyleSkill = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
         z-index: 100;
-        overflow-x: hidden;
     }
 
     .hardSkills {
