@@ -5,7 +5,7 @@ import Spline from "@splinetool/react-spline";
 import AboutMeContent from "./componentsAM/AboutMeContent";
 import HardSkills from "./componentsAM/Skills/hardSkills";
 import SoftSkills from "./componentsAM/Skills/softSkills";
-// import Timeline from "./componentsAM/TimeLine";
+import Timeline from "./componentsAM/TimeLine";
 // import Objective from "./componentsAM/Objective";
 // import ProjectsIntro from "./componentsAM/ProjectsIntro";
 import { Download } from "lucide-react"; 
@@ -45,7 +45,7 @@ export default function SobreMim(){
             {/* Soft Skills */}
             <SoftSkills languages={languages}/>
             {/* Timeline dos cursos que fiz */}
-            {/* <Timeline languages={languages}/> */}
+            <Timeline languages={languages}/>
             {/* Objetivos profissionais */}
             {/* <Objective languages={languages}/> */}
             {/* Introdução aos meus projetos */}

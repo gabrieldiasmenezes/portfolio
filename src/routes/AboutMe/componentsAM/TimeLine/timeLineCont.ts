@@ -8,7 +8,6 @@ export const TimeLineCont = styled.div`
     flex-direction: column;
     align-items: center;
     z-index: 100;
-    width: 100%;
     height: 60vh;
     gap: 50px;
     background: linear-gradient(to bottom, rgb(0, 0, 0), transparent, black);

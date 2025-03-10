@@ -88,6 +88,7 @@ const AboutMe = styled.div`
         top: 100%;
         border:1px solid white;
         z-index: 100;
+        gap:0px
     }
 
     /* .degrade {
