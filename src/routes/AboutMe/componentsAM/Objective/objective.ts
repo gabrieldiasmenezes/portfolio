@@ -11,7 +11,6 @@ const ObjectiveSty = styled.div`
         align-items: center;
         gap: 40px;
         padding: 40px;
-        width: 100%;
         overflow-x: hidden;
     }
 
