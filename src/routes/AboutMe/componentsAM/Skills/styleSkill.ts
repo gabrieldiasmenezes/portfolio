@@ -13,7 +13,7 @@ const StyleSkill = styled.div`
     }
 
     .hardSkills, .softSkills {
-        padding: 50px 20px;
+        padding: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;

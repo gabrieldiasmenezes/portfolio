@@ -81,6 +81,7 @@ const AboutMe = styled.div`
     .components{
         position: absolute;
         display: flex;
+        flex-direction: column;
         width: 100%;
         height: 100%;
         left: 0%;

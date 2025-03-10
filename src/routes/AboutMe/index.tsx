@@ -3,8 +3,8 @@ import NavBar from "../../components/navBar";
 import AboutMe from "../../estilizacao/aboutMe";
 import Spline from "@splinetool/react-spline";
 import AboutMeContent from "./componentsAM/AboutMeContent";
-// import HardSkills from "./componentsAM/Skills/hardSkills";
-// import SoftSkills from "./componentsAM/Skills/softSkills";
+import HardSkills from "./componentsAM/Skills/hardSkills";
+import SoftSkills from "./componentsAM/Skills/softSkills";
 // import Timeline from "./componentsAM/TimeLine";
 // import Objective from "./componentsAM/Objective";
 // import ProjectsIntro from "./componentsAM/ProjectsIntro";
@@ -41,9 +41,9 @@ export default function SobreMim(){
             {/* Seção sobre mim */}
             <AboutMeContent languages={languages}/>
             {/* Hard Skills */}
-            {/* <HardSkills languages={languages}/> */}
+            <HardSkills languages={languages}/>
             {/* Soft Skills */}
-            {/* <SoftSkills languages={languages}/> */}
+            <SoftSkills languages={languages}/>
             {/* Timeline dos cursos que fiz */}
             {/* <Timeline languages={languages}/> */}
             {/* Objetivos profissionais */}
