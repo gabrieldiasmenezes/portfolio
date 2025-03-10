@@ -6,12 +6,11 @@ const ObjectiveSty = styled.div`
     .objective {
         background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(14, 100, 21));
         display: flex;
-        z-index: 100;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 40px;
-        padding: 40px 20px;
+        padding: 40px;
         width: 100%;
         overflow-x: hidden;
     }

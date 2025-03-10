@@ -6,8 +6,8 @@ import AboutMeContent from "./componentsAM/AboutMeContent";
 import HardSkills from "./componentsAM/Skills/hardSkills";
 import SoftSkills from "./componentsAM/Skills/softSkills";
 import Timeline from "./componentsAM/TimeLine";
-// import Objective from "./componentsAM/Objective";
-// import ProjectsIntro from "./componentsAM/ProjectsIntro";
+import Objective from "./componentsAM/Objective";
+import ProjectsIntro from "./componentsAM/ProjectsIntro";
 import { Download } from "lucide-react"; 
 export default function SobreMim(){
     const texts={
@@ -36,7 +36,7 @@ export default function SobreMim(){
                     <a className="cv" href="/pdfs/curriculo.pdf">{texts[languages].button}</a>
                 </button>
             </header>
-            {/* <div className="degrade">o</div> */}
+            <div className="degrade">o</div>
             <section className="components">
             {/* Seção sobre mim */}
             <AboutMeContent languages={languages}/>
@@ -47,9 +47,9 @@ export default function SobreMim(){
             {/* Timeline dos cursos que fiz */}
             <Timeline languages={languages}/>
             {/* Objetivos profissionais */}
-            {/* <Objective languages={languages}/> */}
+            <Objective languages={languages}/>
             {/* Introdução aos meus projetos */}
-            {/* <ProjectsIntro languages={languages}/> */}
+            <ProjectsIntro languages={languages}/>
             {/* Icones de contato */}
             </section>
             {/* Animação 3D */}

@@ -6,7 +6,6 @@ const ProjectsI = styled.div`
   .proj {
     display: flex;
     flex-direction: column;
-    width: 100%;
     padding: 20px;
     background: linear-gradient(to bottom, rgb(14, 100, 21), rgb(26, 188, 39));
     align-items: center;

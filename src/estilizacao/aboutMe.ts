@@ -91,7 +91,7 @@ const AboutMe = styled.div`
         gap:0px
     }
 
-    /* .degrade {
+    .degrade {
         position: absolute;
         display: flex;
         width: 100%;
@@ -101,20 +101,9 @@ const AboutMe = styled.div`
         color: transparent;
         background: linear-gradient(to bottom, transparent, #fff);
         z-index: 100;
-    } */
+    }
 
-    /* Components Styling */
-    /* .components {
-        position: absolute;
-        left: 0%;
-        top: 100%;
-        display: flex;
-        flex-direction: column;
-        width: 97%;
-        max-width: 100%;
-        z-index: 100;
-        gap: 0px;
-    } */
+
 
     /* Media Queries for Responsiveness */
     @media (max-width: 1024px) {
