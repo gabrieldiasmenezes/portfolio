@@ -2,7 +2,7 @@ import { useState } from "react";
 import NavBar from "../../components/navBar";
 import AboutMe from "../../estilizacao/aboutMe";
 import Spline from "@splinetool/react-spline";
-// import AboutMeContent from "./componentsAM/AboutMeContent";
+import AboutMeContent from "./componentsAM/AboutMeContent";
 // import HardSkills from "./componentsAM/Skills/hardSkills";
 // import SoftSkills from "./componentsAM/Skills/softSkills";
 // import Timeline from "./componentsAM/TimeLine";
@@ -39,7 +39,7 @@ export default function SobreMim(){
             {/* <div className="degrade">o</div> */}
             <section className="components">
             {/* Seção sobre mim */}
-            {/* <AboutMeContent languages={languages}/> */}
+            <AboutMeContent languages={languages}/>
             {/* Hard Skills */}
             {/* <HardSkills languages={languages}/> */}
             {/* Soft Skills */}
