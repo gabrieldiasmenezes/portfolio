@@ -8,10 +8,10 @@ export const TimeLineCont = styled.div`
     flex-direction: column;
     align-items: center;
     z-index: 100;
-    height: 80vh;
-    gap: 120px;
+    height: 100vh;
     background: linear-gradient(to bottom, rgb(0, 0, 0), transparent, black);
     padding: 60px 40px;
+    gap: 120px;
     overflow-x: hidden;
   }
 
@@ -107,7 +107,6 @@ export const TimeLineCont = styled.div`
 
   /* Responsividade */
   @media (max-width: 1024px) {
-    .courses{height: 50vh;}
     .title {
       font-size: 2.2em;
       padding: 60px 0;
@@ -122,7 +121,6 @@ export const TimeLineCont = styled.div`
   }
 
   @media (max-width: 768px) {
-    .courses{height: 60vh;}
     .title {
       font-size: 2em;
       padding: 50px 0;
@@ -145,7 +143,6 @@ export const TimeLineCont = styled.div`
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
       gap: 0px;
       padding: 20px;
     }
@@ -185,4 +182,78 @@ export const TimeLineCont = styled.div`
       transform: translateY(-50%);
     }
   }
+
+  /* Estilos para o componente "Objetivos" para garantir que ele não sobreponha a Timeline */
+  .objective {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(14, 100, 21));
+    margin-bottom: 80px;  // Espaçamento inferior para que não sobreponha a timeline
+    overflow-x: hidden;
+  }
+
+  .titleObjective {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    color: rgb(255, 255, 255);
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;  // Permite que o conteúdo se ajuste conforme necessário
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .textObjective {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2em;
+    width: 55%;
+    padding: 20px;
+    text-align: justify;
+    color: rgb(227, 255, 215);
+    line-height: 1.6;
+
+    @media (max-width: 1024px) {
+      width: 90%;
+      text-align: center;
+    }
+  }
+
+  .Picture {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      width: 300px;
+      height: 300px;
+    }
+  }
 `;
+
+export default TimeLineCont;
