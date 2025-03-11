@@ -29,7 +29,6 @@ export default function Home() {
   const [displayedMainText, setDisplayedMainText] = useState("");
   const [displayedSmallText, setDisplayedSmallText] = useState("");
   const [showSmallText, setShowSmallText] = useState(false);
-  const [showButtons, setShowButtons] = useState(false);
 
   // Função para alternar o idioma
   const changeLanguage = () => {
@@ -37,7 +36,6 @@ export default function Home() {
     setDisplayedMainText(texts[languages === "pt" ? "en" : "pt"].mainText);
     setDisplayedSmallText(texts[languages === "pt" ? "en" : "pt"].smallText);
     setShowSmallText(true);
-    setShowButtons(true);
     setFirstRender(false);
   };
 
@@ -72,7 +70,6 @@ export default function Home() {
           index++;
         } else {
           clearInterval(interval);
-          setTimeout(() => setShowButtons(true), 500);
         }
       }, 40);
       return () => clearInterval(interval);
@@ -84,12 +81,10 @@ export default function Home() {
       <main className="portfolioIntro">
         <h1 className="mainText">{displayedMainText}</h1>
         {showSmallText && <p className="smallText">{displayedSmallText}</p>}
-        {showButtons && (
           <div className="buttons">
             <Link to={"/sobre-mim"} className="button">{texts[languages].aboutButton}</Link>
             <Link to={"/projetos"} className="button">{texts[languages].projectsButton}</Link>
           </div>
-        )}
       </main>
       <NavBar changeLanguage={changeLanguage} languages={languages} />
       <Spline className="backgroundAnimation" scene="https://prod.spline.design/SIU5kmEWTMZ5NRZl/scene.splinecode" />
