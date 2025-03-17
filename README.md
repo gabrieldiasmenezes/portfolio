@@ -1,26 +1,31 @@
-# Gabriel Dias Menezes - Portfólio
+# 🚀 Gabriel Dias Menezes - **Meu Portfólio Interativo**
 
-Este repositório contém o meu portfólio pessoal, desenvolvido com React, TypeScript, e estilizado com Styled Components. O objetivo do portfólio é apresentar minhas habilidades e projetos como desenvolvedor front-end, incluindo animações 3D interativas feitas com Spline e uma interface moderna com navegação intuitiva.
+Bem-vindo ao meu **portfólio digital**! Este repositório contém o meu portfólio pessoal, desenvolvido com **React** e **TypeScript**, e estilizado com **Styled Components**. Com animações 3D interativas criadas no **Spline**, minha interface moderna e altamente responsiva reflete minhas habilidades como **Desenvolvedor Front-End**. Aqui, você verá não apenas minhas competências técnicas, mas também minha paixão por criar experiências de usuário incríveis.
 
-## Funcionalidades
+---
 
-- **Página Inicial**: Animação 3D interativa com temas dinâmicos para cada seção do portfólio.
-- **Seção "Sobre Mim"**: Informações sobre minha trajetória e habilidades, com animações detalhadas.
-- **Projetos**: Exibição dos projetos que desenvolvi ao longo da minha jornada.
-- **Contato**: Formulário de contato funcional para enviar mensagens diretamente para o meu e-mail.
-- **Modo Claro/Escuro**: Alternância de tema para melhorar a experiência do usuário.
+## 🌟 **Destaques do Portfólio**
 
-## Tecnologias Usadas
+- **🌌 Página Inicial**: Uma introdução dinâmica com animações 3D interativas que mudam de tema conforme você navega pelas seções.
+- **💡 Seção "Sobre Mim"**: Apresentação pessoal, onde compartilho minha trajetória, habilidades e experiência de forma envolvente e animada.
+- **💼 Projetos**: Uma galeria com os projetos mais relevantes que desenvolvi, com detalhes sobre as tecnologias utilizadas e os desafios enfrentados.
+- **📩 Contato**: Formulário de contato funcional para facilitar a comunicação direta comigo, com integração ao meu e-mail.
 
-- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
-- **Styled Components**: Biblioteca para estilização de componentes React usando CSS-in-JS.
-- **Spline**: Ferramenta para criação de animações 3D interativas no site.
-- **EmailJS**: Serviço para envio de e-mails através do formulário de contato.
+---
 
-## Rodando o Projeto Localmente
+## ⚙️ **Tecnologias Usadas**
 
-Para rodar o projeto localmente, siga os passos abaixo:
+- **React**: Construção de interfaces de usuário rápidas, dinâmicas e reutilizáveis.
+- **TypeScript**: Adiciona tipagem estática ao JavaScript, tornando o código mais seguro e escalável.
+- **Styled Components**: Estilização de componentes React usando CSS-in-JS para um design modular e altamente customizável.
+- **Spline**: Criação de animações 3D interativas, que tornam a navegação do portfólio ainda mais única e imersiva.
+- **EmailJS**: Envio de mensagens diretamente para o meu e-mail através do formulário de contato, sem necessidade de backend.
+
+---
+
+## 🏁 **Rodando o Projeto Localmente**
+
+Se você deseja experimentar o meu portfólio em seu próprio computador, siga os passos abaixo para rodá-lo localmente:
 
 1. **Clone o repositório**:
 
