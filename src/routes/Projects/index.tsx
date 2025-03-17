@@ -10,6 +10,24 @@ export default function Projetos() {
             subTitle: "Descubra soluções inovadoras, aplicações criativas e minha jornada no desenvolvimento de software.",
             projects: [
                 {
+                    "title": "Sovrano 🍽️",
+                    "description": "Sovrano é um sistema de reservas online sofisticado, projetado para oferecer uma experiência ágil e elegante. Com autenticação segura e gestão flexível de reservas, garante um processo intuitivo e eficiente para clientes de restaurantes de alto padrão.",
+                    "link": "https://github.com/gabrieldiasmenezes/Sovrano",
+                    "image": "sovranoImg.png"
+                },                
+                {
+                    "title": "FinNet 🚀",
+                    "description": "FinNet é um sistema de gerenciamento de contas bancárias desenvolvido em Java e Spring Boot. Com validação inteligente e banco de dados em memória, oferece controle eficiente e seguro para contas pessoais e empresariais.",
+                    "link": "https://github.com/gabrieldiasmenezes/FinNet",
+                    "image": "finnet.png"
+                },
+                {
+                    "title": "Money Control API 💸",
+                    "description": "Money Control API é uma plataforma robusta para gerenciamento financeiro pessoal e empresarial. Com suporte a contas bancárias, transações, orçamentos e relatórios, oferece uma API RESTful segura e eficiente para controle total das finanças.",
+                    "link": "https://github.com/gabrieldiasmenezes/MoneyControlAPI",
+                    "image": "moneyControl.png"
+                }, 
+                {
                     title: "Box-Pokemon",
                     description: "Pokémon Box é um projeto em Python que permite organizar e acompanhar capturas de Pokémon, registrando detalhes e monitorando o progresso na Pokédex de forma intuitiva.",
                     link: "https://github.com/gabrieldiasmenezes/Box-Pokemon",
@@ -45,12 +63,31 @@ export default function Projetos() {
                     link: "https://github.com/gabrieldiasmenezes/site-pousada",
                     image: "pousada.png"
                 }
+                
             ]
         },
         en: {
             title: "Explore My Universe of Projects!",
             subTitle: "Discover innovative solutions, creative applications, and my journey in software development.",
             projects: [
+                {
+                    "title": "Sovrano 🍽️",
+                    "description": "Sovrano is a sophisticated online reservation system designed for a seamless and elegant booking experience. With secure authentication and flexible reservation management, it ensures an intuitive and efficient process for high-end restaurant clients.",
+                    "link": "https://github.com/gabrieldiasmenezes/Sovrano",
+                    "image": "sovranoImg.png"
+                },                
+                {
+                    "title": "FinNet 🚀",
+                    "description": "FinNet is a banking account management system built with Java and Spring Boot. It features smart validation and in-memory database support for secure and efficient financial control.",
+                    "link": "https://github.com/gabrieldiasmenezes/FinNet",
+                    "image": "finnet.png"
+                },  
+                {
+                    "title": "Money Control API 💸",
+                    "description": "Money Control API is a powerful financial management platform for personal and business use. It supports bank accounts, transactions, budgets, and reports, offering a secure and efficient RESTful API for full financial control.",
+                    "link": "https://github.com/gabrieldiasmenezes/MoneyControlAPI",
+                    "image": "moneyControl.png"
+                },                             
                 {
                     title: "Box-Pokemon",
                     description: "Pokémon Box is a Python project that allows users to organize and track Pokémon captures, recording details and monitoring progress in the Pokédex intuitively.",
@@ -87,6 +124,7 @@ export default function Projetos() {
                     link: "https://github.com/gabrieldiasmenezes/site-pousada",
                     image: "pousada.png"
                 }
+                
             ]
         }
     };
