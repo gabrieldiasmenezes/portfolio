@@ -6,7 +6,7 @@ export const textProjects = {
             {
                 title: "Sovrano API 🍽️",
                 description: "Sovrano API é o back-end do sistema de reservas online sofisticado. Ele gerencia de forma segura e eficiente todas as interações de reserva, com autenticação segura e controle completo das reservas no restaurante.",
-                link: "https://github.com/gabrieldiasmenezes/reserva-Sovrano",
+                link: "https://github.com/gabrieldiasmenezes/sovrano-api",
                 image: "sovranoImgAPI.jpg"
             },
             {
@@ -79,7 +79,7 @@ export const textProjects = {
             {
                 title: "Sovrano API 🍽️",
                 description: "Sovrano API is the back-end of the sophisticated online reservation system. It securely and efficiently manages all reservation interactions, with secure authentication and full control over restaurant bookings.",
-                link: "https://github.com/gabrieldiasmenezes/reserva-Sovrano",
+                link: "https://github.com/gabrieldiasmenezes/rsovrano-api",
                 image: "sovranoImgAPI.jpg"
             },
             {
