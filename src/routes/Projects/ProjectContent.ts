@@ -4,6 +4,12 @@ export const textProjects = {
         subTitle: "Descubra soluções inovadoras, aplicações criativas e minha jornada no desenvolvimento de software.",
         projects: [
             {
+                title: "Movie Catalog 🎬",
+                description: "Movie Catalog é uma aplicação web em ASP.NET Core MVC para cadastro, visualização e gerenciamento de filmes. Conta com interface escura responsiva, validações robustas nos formulários, edição segura e visualização completa com imagem, gênero, descrição, ano e diretor.",
+                link: "https://github.com/gabrieldiasmenezes/MovieCatalog",
+                "image": "movieCatalog.jpg"
+            },
+            {
                 title: "Sovrano API 🍽️",
                 description: "Sovrano API é o back-end do sistema de reservas online sofisticado. Ele gerencia de forma segura e eficiente todas as interações de reserva, com autenticação segura e controle completo das reservas no restaurante.",
                 link: "https://github.com/gabrieldiasmenezes/sovrano-api",
@@ -76,6 +82,12 @@ export const textProjects = {
         title: "Explore My Universe of Projects!",
         subTitle: "Discover innovative solutions, creative applications, and my journey in software development.",
         projects: [
+            {
+                title: "Movie Catalog 🎬",
+                description: "Movie Catalog is a web application built with ASP.NET Core MVC for managing a movie collection. It features a responsive dark-themed interface, strong form validations, secure editing, and full movie detail views with images, genre, year, description, and director.",
+                link: "https://github.com/gabrieldiasmenezes/MovieCatalog",
+                "image": "movieCatalog.jpg"
+            },
             {
                 title: "Sovrano API 🍽️",
                 description: "Sovrano API is the back-end of the sophisticated online reservation system. It securely and efficiently manages all reservation interactions, with secure authentication and full control over restaurant bookings.",
