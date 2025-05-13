@@ -33,7 +33,7 @@ export default function SobreMim(){
                 <h1 className="textIntro">{texts[languages].title}</h1>
                 <button className="buttonIntro" aria-label="Desça para ver minha jornada">
                     <Download className="icon" size={30} />
-                    <a className="cv" href="/pdfs/curriculo.pdf">{texts[languages].button}</a>
+                    <a className="cv" href="/pdfs/Gabriel_Dias_Curriculo.pdf">{texts[languages].button}</a>
                 </button>
             </header>
             <div className="degrade">o</div>
