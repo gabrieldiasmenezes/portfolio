@@ -64,7 +64,7 @@ const ProjectsS = styled.div`
   .repoContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
+    gap: 25px;
     align-items: stretch;
   }
 
@@ -77,16 +77,17 @@ const ProjectsS = styled.div`
   background: rgba(255, 136, 0, 0.1);
   border: 1px solid rgba(255, 136, 0, 0.6);
   border-radius: 16px;
-  padding: 20px 30px; 
+  padding: 10px 30px; 
   display: flex;
   flex-direction: column;
-  gap: 20px; 
+  gap: 15px; 
   justify-content: flex-start; 
   color: white;
   backdrop-filter: blur(8px);
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
   height: 100%;
+  box-sizing: border-box;
 }
 
 .repoBox:hover {
