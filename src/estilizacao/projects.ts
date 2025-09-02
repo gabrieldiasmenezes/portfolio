@@ -63,8 +63,8 @@ const ProjectsS = styled.div`
 
   .repoContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
     align-items: stretch;
   }
 
@@ -77,7 +77,7 @@ const ProjectsS = styled.div`
   background: rgba(255, 136, 0, 0.1);
   border: 1px solid rgba(255, 136, 0, 0.6);
   border-radius: 16px;
-  padding: 40px 50px; 
+  padding: 20px 30px; 
   display: flex;
   flex-direction: column;
   gap: 20px; 
