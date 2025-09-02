@@ -1,257 +1,167 @@
 import styled from "styled-components";
 
-export const TimeLineCont = styled.div`
+const TimeLineCont = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400&display=swap");
 
-  .courses {
+  .container {
     display: flex;
     flex-direction: column;
+    padding: 100px;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 1), rgba(14, 100, 21, 0), rgba(0, 0, 0, 1));
     align-items: center;
     z-index: 100;
-    height: 100vh;
-    background: linear-gradient(to bottom, rgb(0, 0, 0), transparent, black);
-    padding: 60px 40px;
-    gap: 120px;
+    gap: 40px;
     overflow-x: hidden;
   }
 
-  .title {
+  .cert-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .cert-title {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.5em;
-    padding: 80px 0;
+    font-size: 2.2em;  /* Reduzi o tamanho da fonte */
+    padding: 20px;
     text-align: center;
     width: 100%;
     color: #ffffff;
   }
 
-  .line {
-    position: relative;
-    width: 80%;
-    height: 3px;
-    background-color: white;
+  .cert-list {
+    height: 70%;
+    width: 70%;  /* Reduzi a largura da lista de projetos */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 60px;
-    box-shadow: 0 0 40px 16px green;
-  }
-
-  .point {
-    position: relative;
-    width: 16px;
-    height: 16px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0 0 10px 4px green;
+    flex-direction: column;
+    gap: 40px;
     cursor: pointer;
-    list-style-type: none;
   }
 
-  .tooltip {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
+  .cert-item {
+    display: flex;
+    position: relative;
+    background-color: #FFFFFF;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    white-space: nowrap;
-    box-shadow: 0 0 15px 4px green;
-    width: 280px;
-    font-family: "Inter", sans-serif;
-    font-size: 1em;
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 80%;  /* Diminui o tamanho da box */
+    margin: 0 auto;
   }
 
-  .point:nth-child(odd) .tooltip {
-    bottom: 70px;
+  .cert-item-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;  /* Reduzi o tamanho da fonte do título */
+    padding: 20px;
+    color: rgb(29, 29, 29);
+    text-align: center;
+    flex-grow: 1;
   }
 
-  .point:nth-child(even) .tooltip {
-    top: 70px;
-  }
-
-  .text {
+  .cert-btn {
+    background-color: transparent;
     color: white;
-    font-family: "Inter", sans-serif;
-    font-size: 0.8em;
-    margin-bottom: 10px;
-  }
-
-  .text strong {
-    font-weight: bold;
-    color: #72ff00;
-  }
-
-  .Certificate {
-    color: white;
+    font-size: 1.1em;  /* Reduzi o tamanho da fonte do botão */
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: 2px solid white;
     text-decoration: none;
     font-weight: bold;
-    font-family: "Inter", sans-serif;
-    font-size: 1.1em;
-    margin-top: 10px;
-    display: block;
-    padding: 8px 12px;
-    border-radius: 5px;
-    background-color: rgba(72, 255, 0, 0.2);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
-  .Certificate:hover {
-    background-color: rgba(72, 255, 0, 0.4);
-    color: rgb(72, 255, 0);
+  .cert-btn:hover {
+    background-color: rgba(140, 255, 111, 1);
+    border: none;
+    transform: translateY(-3px);
+  }
+  .cert-item:hover{
+    background-color:rgba(36, 180, 0, 1) ;
+    transform: translateY(-3px);
+    color:black;
+  }
+
+  .cert-btn:active {
+    transform: translateY(1px);
+  }
+
+  .cert-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
   }
 
   /* Responsividade */
   @media (max-width: 1024px) {
-    .title {
-      font-size: 2.2em;
-      padding: 60px 0;
+    .cert-title {
+      font-size: 2em;
     }
-    .line {
-      width: 85%;
+
+    .cert-list {
+      width: 90%;
     }
-    .tooltip {
-      width: 250px;
-      font-size: 0.9em;
+
+    .cert-item {
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 750px;  /* Ajustei a largura da box para dispositivos menores */
+    }
+    .cert-item-title {
+      font-size: 1.3em;
     }
   }
 
   @media (max-width: 768px) {
-    .title {
-      font-size: 2em;
-      padding: 50px 0;
+    .cert-title {
+      font-size: 1.8em;
+      padding: 40px;
     }
-    .line {
-      width: 90%;
+
+    .cert-list {
+      width: 100%;
     }
-    .point {
-      width: 14px;
-      height: 14px;
+
+    .cert-item {
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 600px;  /* Reduzi ainda mais a largura da box */
     }
-    .tooltip {
-      width: 220px;
-      font-size: 0.8em;
+
+    .cert-item-title {
+      font-size: 1.2em;
     }
   }
 
   @media (max-width: 480px) {
-    .courses {
+    .cert-title {
+      font-size: 1.6em;
+      padding: 30px;
+    }
+
+    .cert-list {
+      width: 100%;
+    }
+
+    .cert-item {
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0px;
-      padding: 20px;
+      align-items: flex-start;
+      max-width: 400px;  /* Ajustei para tamanhos ainda menores */
     }
 
-    .line {
-      width: 3px;
-      height: 300px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    .cert-item-title {
+      font-size: 1.1em;
     }
 
-    .point {
-      width: 16px;
-      height: 16px;
-    }
-
-    .tooltip {
-      width: 200px;
-      height: 100px;
-      font-size: 0.7em;
-      padding: 15px;
-      left: auto;
-      transform: none;
-    }
-
-    /* Alternar tooltip para esquerda e direita */
-    .point:nth-child(odd) .tooltip {
-      left: -230px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    .point:nth-child(even) .tooltip {
-      left: 30px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
-
-  /* Estilos para o componente "Objetivos" para garantir que ele não sobreponha a Timeline */
-  .objective {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 40px;
-    width: 100%;
-    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(14, 100, 21));
-    margin-bottom: 80px;  // Espaçamento inferior para que não sobreponha a timeline
-    overflow-x: hidden;
-  }
-
-  .titleObjective {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5em;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    color: rgb(255, 255, 255);
-  }
-
-  .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    flex-wrap: wrap;  // Permite que o conteúdo se ajuste conforme necessário
-
-    @media (max-width: 1024px) {
-      flex-direction: column;
-      text-align: center;
-    }
-  }
-
-  .textObjective {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.2em;
-    width: 55%;
-    padding: 20px;
-    text-align: justify;
-    color: rgb(227, 255, 215);
-    line-height: 1.6;
-
-    @media (max-width: 1024px) {
-      width: 90%;
-      text-align: center;
-    }
-  }
-
-  .Picture {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-
-    &:hover {
-      transform: scale(1.05);
-    }
-
-    @media (max-width: 768px) {
-      width: 300px;
-      height: 300px;
+    .cert-btn {
+      font-size: 1em;
+      padding: 10px 20px;
     }
   }
 `;

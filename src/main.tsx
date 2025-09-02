@@ -8,6 +8,7 @@ import Error from './routes/Error/index.tsx'
 import SobreMim from './routes/AboutMe/index.tsx'
 import Projetos from './routes/Projects/index.tsx'
 import Contato from './routes/Contact/index.tsx'
+import Certifications from './routes/Certifications/index.tsx'
 const router=createBrowserRouter([{
   path:'/',
   element:<App/>,
@@ -24,6 +25,11 @@ const router=createBrowserRouter([{
     {
       path:'/projetos',
       element:<Projetos/>
+    },
+    {
+      path:'/certificacoes',
+      element:<Certifications/>
+
     },
     {
       path:'/contato',

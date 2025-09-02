@@ -21,6 +21,7 @@ export default function NavBar({ changeLanguage, languages }: NavBarProps) {
     { id: "contato", label: languages === "pt" ? "Contato" : "Contact", img: "contato.png", link: "/contato" },
     { id: "sobre", label: languages === "pt" ? "Sobre Mim" : "About Me", img: "sobre.png", link: "/sobre-mim" },
     { id: "projetos", label: languages === "pt" ? "Projetos" : "Projects", img: "projetos.png", link: "/projetos" },
+    { id: "certificacoes", label: languages === "pt" ? "Certificações" : "Certifications", img: "certificacao.png", link: "/certificacoes" },
   ];
 
   const [showMenu, setShowMenu] = useState(false);

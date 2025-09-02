@@ -1,63 +1,40 @@
-import { useState } from "react";
-import { TimeLineCont } from "./timeLineCont";
-interface TimeLineProps {
-  languages: "pt" | "en";
+import { Link } from "react-router-dom";
+import TimeLineCont from "./timeLineCont";
+interface ProjectsIntroProps{
+  languages:"pt"|"en";
 }
-
-const courses = [
-  { name: "Design Thinking Process - FIAP", year: "2024", link: "/pdfs/disignThin.pdf" },
-  { name: "Future-Proof Organizations - FIAP", year: "2024", link: "/pdfs/futurePO.pdf" },
-  { name: "HTML e CSS - Alura", year: "2024", link: "/pdfs/JavaA.pdf" },
-  { name: "Java: Primeira Aplicação - Alura", year: "2024", link: "/pdfs/HTCSA.pdf" },
-  { name: "Python para Data Science - Alura", year: "2024", link: "pdfs/pyA.pdf" },
-  { name: "SQLite Online - Alura", year: "2024", link: "/pdfs/SQLA.pdf" }
-];
-
-export default function TimeLine({ languages }: TimeLineProps) {
-  const [activeTooltip, setActiveTooltip] = useState<string | null>(null);
-
-  const toggleTooltip = (courseName: string) => {
-    setActiveTooltip(prevState => (prevState === courseName ? null : courseName));
-  };
-
-  const texts = {
-    pt: {
-      title: "Certificações",
-      course: "Curso",
-      year: "Ano de conclusão",
-      certificate: "Certificado"
+export default function ProjectsIntro({languages}:ProjectsIntroProps) {
+  const texts={
+    pt:{
+      projTitle:"Minhas Certificações",
+      projItemTitle1:"Design Thinking Process - FIAP",
+      projItemTitle2:"Python para Data Science - Alura",
+      projBtn:"Veja Mais Certificações"
     },
-    en: {
-      title: "Certifications",
-      course: "Course",
-      year: "Year of Completion",
-      certificate: "Certificate"
+    en:{
+      projTitle: "My Certifications",
+      projItemTitle1:"Design Thinking Process - FIAP",
+      projItemTitle2:"Python para Data Science - Alura",
+      projBtn: "See More of My Certifications"
     }
-  };
-
+  }
   return (
     <TimeLineCont>
-      <section className="courses">
-        <header>
-          <h2 className="title">{texts[languages].title}</h2>
+      <section className="container">
+        <header className="cert-header">
+          <h2 className="cert-title">{texts[languages].projTitle}</h2>
         </header>
-        <ol className="line">
-          {courses.map((course, index) => (
-            <li key={index} className="point" onClick={() => toggleTooltip(course.name)}>
-              <div className={`tooltip ${activeTooltip === course.name ? 'active' : ''}`}>
-                <p className="text">
-                  <strong>{texts[languages].course}:</strong> {course.name}
-                </p>
-                <p className="text">
-                  <strong>{texts[languages].year}:</strong> {course.year}
-                </p>
-                <a href={course.link} className="Certificate" target="_blank" rel="noopener noreferrer">
-                  {texts[languages].certificate}
-                </a>
-              </div>
-            </li>
-          ))}
-        </ol>
+        <div className="cert-list">
+          <a href="/pdfs/disignThin.pdf" className="cert-item">
+            <h3 className="cert-item-title">{texts[languages].projItemTitle1}</h3>
+          </a>
+          <a href="pdfs/pyA.pdf" className="cert-item">
+            <h3 className="cert-item-title">{texts[languages].projItemTitle2}</h3>
+          </a>
+        </div>
+        <button className="cert-btn">
+          <Link className="cert-link" to="/certificacoes">{texts[languages].projBtn}</Link>
+        </button>
       </section>
     </TimeLineCont>
   );
