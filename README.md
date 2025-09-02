@@ -1,6 +1,6 @@
 # 🚀 Gabriel Dias Menezes - **Meu Portfólio Interativo**
 
-Bem-vindo ao meu **portfólio digital**! Este repositório contém o meu portfólio pessoal, desenvolvido com **React** e **TypeScript**, e estilizado com **Styled Components**. Com animações 3D interativas criadas no **Spline**, minha interface moderna e altamente responsiva reflete minhas habilidades como **Desenvolvedor Front-End**. Aqui, você verá não apenas minhas competências técnicas, mas também minha paixão por criar experiências de usuário incríveis.
+Bem-vindo ao meu **portfólio digital**! Este repositório contém o meu portfólio pessoal, desenvolvido com **React** e **TypeScript**, e estilizado com **Styled Components**. Com animações 3D interativas criadas no **Spline**, minha interface moderna e altamente responsiva reflete minhas habilidades como **desenvolvedor**. Aqui, você verá não apenas minhas competências técnicas, mas também minha paixão por criar experiências de usuário incríveis.
 
 ---
 
