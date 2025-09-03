@@ -39,7 +39,9 @@ Se você deseja experimentar o meu portfólio em seu próprio computador, siga o
    Navegue até o diretório do projeto e instale as dependências necessárias com o npm:
 
    ```bash
-   cd portfolio npm install
+   cd portfolio
+   npm install
+   ```
 
 3. **Inicie o servidor de desenvolvimento**:
 
