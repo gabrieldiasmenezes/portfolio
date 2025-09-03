@@ -6,10 +6,11 @@ const CertificationsS = styled.div`
   .certificationsContainer {
     position: relative;
     display: flex;
+    position: relative;
+    left:0;
     z-index: 100;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     min-height: 100vh;
     font-family: "Poppins", sans-serif;
     padding: 80px 40px;
@@ -28,7 +29,7 @@ const CertificationsS = styled.div`
     display: inline-block;
     padding-bottom: 5px;
     margin-bottom: 20px;
-    border-bottom: 3px solid #ff8800;
+    border-bottom: 3px solidrgb(0, 255, 242);
     text-transform: uppercase;
     font-size: 2.2rem;
     color: white;
@@ -42,6 +43,7 @@ const CertificationsS = styled.div`
 
   .certificatesGrid {
     display: grid;
+    position: relative;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
     align-items: stretch;
@@ -53,12 +55,13 @@ const CertificationsS = styled.div`
   }
 
   .certificateBox {
-    background: rgba(255, 136, 0, 0.1);
-    border: 1px solid rgba(255, 136, 0, 0.6);
+    background: rgba(0, 225, 255, 0.1);
+    border: 1px solid rgba(0, 255, 234, 0.6);
     border-radius: 16px;
-    padding: 40px 20px;
+    padding: 10px 30px;
     transition: transform 0.3s, box-shadow 0.3s;
     color: white;
+    gap: 15px;;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,7 +72,7 @@ const CertificationsS = styled.div`
 
   .certificateBox:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 0 15px #ff8800;
+    box-shadow: 0 0 15pxrgb(0, 255, 242);
   }
 
   .certificateName {

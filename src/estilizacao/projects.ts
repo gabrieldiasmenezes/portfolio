@@ -5,11 +5,11 @@ const ProjectsS = styled.div`
 
   .projectsContainer {
     position: relative;
+    left:0;
     display: flex;
     z-index: 100;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     min-height: 100vh;
     font-family: "Poppins", sans-serif;
     padding: 80px 40px;
@@ -62,6 +62,8 @@ const ProjectsS = styled.div`
 
 
   .repoContainer {
+    position:relative;
+    left:0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 25px;

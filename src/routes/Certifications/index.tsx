@@ -56,7 +56,7 @@ export default function Certifications() {
 
       <Spline
         className="backgroundAnimation"
-        scene="https://prod.spline.design/v-Fe-h8dCehvBZw7/scene.splinecode"
+        scene="https://prod.spline.design/U45yiaEd3HFAXp2c/scene.splinecode"
         aria-hidden="true"
       />
     </CertificationsS>
