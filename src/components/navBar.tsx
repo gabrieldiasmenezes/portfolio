@@ -1,65 +1,78 @@
+"use client";
+
 import { useState } from "react";
-import NavBarS from "../estilizacao/navBar";
-import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useLanguage } from "../context/LanguageContext";
+import menuItens from "../data/navBar";
+import NavBarS from "../estilizacao/navBar";
 
-interface MenuItem {
-  id: string;
-  label: string;
-  img: string;
-  link: string;
-}
 
-interface NavBarProps {
-  changeLanguage: () => void;
-  languages: "pt" | "en";
-}
+// import NavBarS from "../estilizacao/navBar"; // se estiver usando styled-components
 
-export default function NavBar({ changeLanguage, languages }: NavBarProps) {
-  const menuItens: MenuItem[] = [
-    { id: "home", label: languages === "pt" ? "Página Principal" : "Home", img: "home.png", link: "/" },
-    { id: "contato", label: languages === "pt" ? "Contato" : "Contact", img: "contato.png", link: "/contato" },
-    { id: "sobre", label: languages === "pt" ? "Sobre Mim" : "About Me", img: "sobre.png", link: "/sobre-mim" },
-    { id: "projetos", label: languages === "pt" ? "Projetos" : "Projects", img: "projetos.png", link: "/projetos" },
-    { id: "certificacoes", label: languages === "pt" ? "Certificações" : "Certifications", img: "certificacao.png", link: "/certificacoes" },
-  ];
+export default function NavBar() {
+  const { language, setLanguage } = useLanguage();
 
   const [showMenu, setShowMenu] = useState(false);
-  const [menuHover, setMenuHover] = useState(false);
-  const [hoveredItem, setHoveredItem] = useState<string>("");
+  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
-  const toggleMenu = () => {
-    setShowMenu((prev) => !prev);
+  const items = menuItens(language);
+
+  const toggleLanguage = () => {
+    setLanguage((prev) => (prev === "pt" ? "en" : "pt"));
   };
 
   return (
     <NavBarS>
-      <nav className="menu-container" onMouseEnter={() => setMenuHover(true)} onMouseLeave={() => setMenuHover(false)}>
-        <div className="menu-icon" onClick={toggleMenu}>
+
+      <nav className="menu-container">
+        {/* MENU ICON */}
+        <div className="menu-icon" onClick={() => setShowMenu((prev) => !prev)}>
           ☰
         </div>
-        <div className={`menu ${showMenu || menuHover ? "open" : ""}`}>
-          {menuItens.map((itens) => (
-            <div key={itens.id} className="menu-item" onMouseEnter={() => setHoveredItem(itens.label)} onMouseLeave={() => setHoveredItem("")}>
-              <Link to={itens.link} className="links">
-                <img src={itens.img} alt={itens.label} />
-                {hoveredItem === itens.label && <span className="menu-label">{itens.label}</span>}
-              </Link>
+
+        {/* MENU */}
+        <div className={`menu ${showMenu ? "open" : ""}`}>
+          {items.map((item) => (
+            <div
+              key={item.id}
+              className="menu-item"
+              onMouseEnter={() => setHoveredItem(item.id)}
+              onMouseLeave={() => setHoveredItem(null)}
+            >
+              <a href={item.link} className="menu-link">
+                <img src={item.img} alt={item.label} />
+                {hoveredItem === item.id && (
+                  <span className="menu-label">{item.label}</span>
+                )}
+              </a>
             </div>
           ))}
         </div>
+
+        {/* LANGUAGE SWITCH */}
+        <button className="change-language" onClick={toggleLanguage}>
+          {language === "pt" ? "EN" : "PT-BR"}
+        </button>
+
+        {/* SOCIAL */}
+        <section className="socialIcons">
+          <a
+            href="https://github.com/gabrieldiasmenezes"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/gabriel-dias-5851382b5/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+        </section>
       </nav>
-      <button className="change-language" onClick={changeLanguage}>
-        {languages === "pt" ? "EN" : "PT-BR"}
-      </button>
-      <section className="socialIcons">
-        <a href="https://github.com/gabrieldiasmenezes" className="icons" target="_blank" rel="noopener noreferrer">
-          <FaGithub />
-        </a>
-        <a href="https://www.linkedin.com/in/gabriel-dias-5851382b5/" className="icons" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin />
-        </a>
-      </section>
     </NavBarS>
   );
 }

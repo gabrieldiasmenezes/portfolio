@@ -1,35 +1,21 @@
-import { useState } from "react";
+"use client"
 import NavBar from "../../components/navBar";
 import Spline from "@splinetool/react-spline";
 import { courses } from "./certifications";
 import CertificationsS from "../../estilizacao/certifications";
+import { contactText } from "../../data/contact";
+import { useLanguage } from "../../context/LanguageContext";
 
 export default function Certifications() {
-  const texts = {
-    pt: {
-      title: "Minhas Certificações",
-      subTitle:
-        "Explore os cursos e certificações que obtive durante minha jornada de aprendizado.",
-    },
-    en: {
-      title: "My Certifications",
-      subTitle:
-        "Explore the courses and certifications I've obtained during my learning journey.",
-    },
-  };
-
-  const [language, setLanguage] = useState<"pt" | "en">("pt");
-
-  const changeLanguage = () => {
-    setLanguage((prev) => (prev === "pt" ? "en" : "pt"));
-  };
+    const { language } = useLanguage();
+    const text = contactText[language];
 
   return (
     <CertificationsS>
       <div className="certificationsContainer">
         <main className="content">
-          <h1 className="title">{texts[language].title}</h1>
-          <p className="subTitle">{texts[language].subTitle}</p>
+          <h1 className="title">{text.title}</h1>
+          <p className="subTitle">{text.subTitle}</p>
 
           <section className="certificatesGrid">
             {courses.map((course, index) => (
@@ -52,7 +38,7 @@ export default function Certifications() {
         </main>
       </div>
 
-      <NavBar changeLanguage={changeLanguage} languages={language} />
+      <NavBar/>
 
       <Spline
         className="backgroundAnimation"

@@ -1,36 +1,22 @@
-import { useState } from "react";
+"use client"
 import NavBar from "../../components/navBar";
 import ProjectsS from "../../estilizacao/projects";
 import Spline from "@splinetool/react-spline";
 import { gitHubRepositories } from "./gitHubRepo";
+import { useLanguage } from "../../context/LanguageContext";
+import projects from "../../data/projects";
 
 export default function Projetos() {
-  const texts = {
-    pt: {
-      title: "Explore Meu Universo de Projetos!",
-      subTitle:
-        "Descubra soluções inovadoras, aplicações criativas e minha jornada no desenvolvimento de software.",
-    },
-    en: {
-      title: "Explore My Universe of Projects!",
-      subTitle:
-        "Discover innovative solutions, creative applications, and my journey in software development.",
-    },
-  };
-
   const { repositories, loading } = gitHubRepositories();
-  const [languages, setLanguages] = useState<"pt" | "en">("pt");
-
-  const changeLanguage = () => {
-    setLanguages((prev) => (prev === "pt" ? "en" : "pt"));
-  };
-
+  const {language}=useLanguage();
+  const texts=projects[language];
+  
   return (
     <ProjectsS>
       <div className="projectsContainer">
         <main className="content">
-          <h1 className="title">{texts[languages].title}</h1>
-          <p className="subTitle">{texts[languages].subTitle}</p>
+          <h1 className="title">{texts.title}</h1>
+          <p className="subTitle">{texts.subTitle}</p>
           {loading ? (
             <div className="loaderContainer">
                 <div className="loader"></div>
@@ -92,7 +78,7 @@ export default function Projetos() {
         </main>
       </div>
 
-      <NavBar changeLanguage={changeLanguage} languages={languages} />
+      <NavBar/>
 
       <Spline
         className="backgroundAnimation"

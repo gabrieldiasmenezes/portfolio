@@ -1,7 +1,7 @@
-// components/Form.tsx
+"use client"
 import { useState } from "react";
 import emailjs from "emailjs-com";
-
+import { contactForm } from "../../data/contact";
 interface FormProps {
   language: "pt" | "en";
 }
@@ -14,30 +14,7 @@ const Form = ({ language }: FormProps) => {
   });
   const [isSent, setIsSent] = useState(false);
   const [isError, setIsError] = useState(false);
-
-  const contactText = {
-    pt: {
-      form: {
-        name: "Nome",
-        email: "E-mail",
-        message: "Mensagem",
-        send: "Enviar",
-        messageC:"Mensagem enviada com sucesso!",
-        messageE:"Ocorreu um erro. Tente novamente!"
-      },
-    },
-    en: {
-      form: {
-        name: "Name",
-        email: "Email",
-        message: "Message",
-        send: "Send",
-        messageC: "Message sent successfully!",
-        messageE: "An error occurred. Please try again!",
-      },
-    },
-  };
-
+  const text = contactForm[language];
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
 
@@ -77,7 +54,7 @@ const Form = ({ language }: FormProps) => {
       <input
         type="text"
         name="name"
-        placeholder={contactText[language].form.name}
+        placeholder={text.form.name}
         value={formData.name}
         onChange={handleChange}
         required
@@ -85,22 +62,22 @@ const Form = ({ language }: FormProps) => {
       <input
         type="email"
         name="email"
-        placeholder={contactText[language].form.email}
+        placeholder={text.form.email}
         value={formData.email}
         onChange={handleChange}
         required
       />
       <textarea
         name="message"
-        placeholder={contactText[language].form.message}
+        placeholder={text.form.message}
         value={formData.message}
         onChange={handleChange}
         required
       />
-      <button type="submit">{contactText[language].form.send}</button>
+      <button type="submit">{text.form.send}</button>
 
-      {isSent && <p className="message">{contactText[language].form.messageC}</p>}
-      {isError && <p className="message">{contactText[language].form.messageE}</p>}
+      {isSent && <p className="message">{text.form.messageC}</p>}
+      {isError && <p className="message">{text.form.messageE}</p>}
     </form>
   );
 };

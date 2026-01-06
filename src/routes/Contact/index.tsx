@@ -1,35 +1,22 @@
-// pages/contato.tsx
-import { useState } from "react";
+"use client"
 import NavBar from "../../components/navBar";
 import ContactS from "../../estilizacao/contact";
 import Spline from "@splinetool/react-spline";
 import { FaEnvelope, FaLinkedin, FaGithub, FaPhone } from "react-icons/fa";
 import Form from "./FormProps";
+import { useLanguage } from "../../context/LanguageContext";
+import { contactText } from "../../data/contact";
 
 export default function Contato() {
-  const [languages, setLanguages] = useState<"pt" | "en">("pt");
-
-  const changeLanguage = () => {
-    setLanguages((prev) => (prev === "pt" ? "en" : "pt"));
-  };
-
-  const contactText = {
-    pt: {
-      title: "Entre em Contato",
-      subTitle: "Fale comigo através dos canais abaixo ou envie uma mensagem.",
-    },
-    en: {
-      title: "Get in Touch",
-      subTitle: "Contact me through the channels below or send a message.",
-    },
-  };
+  const { language } = useLanguage();
+  const text = contactText[language];
 
   return (
     <ContactS>
       <section className="contactContainer">
         <main className="content">
-          <h1 className="heading">{contactText[languages].title}</h1>
-          <p className="subHeading">{contactText[languages].subTitle}</p>
+          <h1 className="heading">{text.title}</h1>
+          <p className="subHeading">{text.subTitle}</p>
 
           <section className="contactLinks">
             <a href="mailto:g.dias120306@gmail.com" className="contactItem">
@@ -47,11 +34,11 @@ export default function Contato() {
           </section>
 
           {/* Usando o Form no componente Contato */}
-          <Form language={languages} />
+          <Form language={language} />
         </main>
       </section>
 
-      <NavBar changeLanguage={changeLanguage} languages={languages} />
+      <NavBar/>
 
       <Spline
         className="backgroundAnimation"

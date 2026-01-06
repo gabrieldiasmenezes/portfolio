@@ -1,45 +1,31 @@
 import { Link } from "react-router-dom";
 import ProjectsI from "./projectIntro";
-interface ProjectsIntroProps{
-  languages:"pt"|"en";
-}
-export default function ProjectsIntro({languages}:ProjectsIntroProps) {
-  const texts={
-    pt:{
-      projTitle:"Meus Projetos",
-      projItemTitle1:"Pokémon Box - Gerencie suas Capturas!",
-      projItemTitle2:"Solar Flower - Tecnologia de Energia Renovável",
-      projBtn:"Veja mais projetos meus"
-    },
-    en:{
-      projTitle: "My Projects",
-      projItemTitle1: "Pokémon Box - Manage Your Captures!",
-      projItemTitle2: "Solar Flower - Renewable Energy Technology",
-      projBtn: "See More of My Projects"
-    }
-  }
+import projects from "../../../../data/aboutMe/projects";
+
+export default function ProjectsIntro({languages}:LanguageProps) {
+  const texts=projects[languages]
   return (
     <ProjectsI>
       <section className="proj">
         <header className="proj-header">
-          <h2 className="proj-title">{texts[languages].projTitle}</h2>
+          <h2 className="proj-title">{texts.projTitle}</h2>
         </header>
         <div className="proj-list">
-          <a href="https://github.com/gabrieldiasmenezes/Box-Pokemon" className="proj-item">
-            <h3 className="proj-item-title">{texts[languages].projItemTitle1}</h3>
+          <a href="https://github.com/gabrieldiasmenezes/dashVendas" className="proj-item">
+            <h3 className="proj-item-title">{texts.projItemTitle1}</h3>
             <div className="proj-img-container">
-              <img src="pkm.jpg" alt="Pokémon Box" className="proj-img" />
+              <img src="dash.jpg" alt="DashVendas" className="proj-img" />
             </div>
           </a>
-          <a href="https://github.com/gabrieldiasmenezes/solarflower" className="proj-item">
-            <h3 className="proj-item-title">{texts[languages].projItemTitle2}</h3>
+          <a href="https://github.com/gabrieldiasmenezes/New-Nautilus-Monitoring" className="proj-item">
+            <h3 className="proj-item-title">{texts.projItemTitle2}</h3>
             <div className="proj-img-container">
-              <img src="solarFlower.png" alt="Solar Flower" className="proj-img" />
+              <img src="nnm.png" alt="Solar Flower" className="proj-img" />
             </div>
           </a>
         </div>
         <button className="proj-btn">
-          <Link className="proj-link" to="/projetos">{texts[languages].projBtn}</Link>
+          <Link className="proj-link" to="/projetos">{texts.projBtn}</Link>
         </button>
       </section>
     </ProjectsI>

@@ -78,17 +78,13 @@ const AboutMe = styled.div`
     .cv:hover {
         color: black;
     }
-    .components{
-        position: absolute;
+    .components {
+        position: relative; /* 🔥 CRÍTICO */
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 100%;
-        left: 0%;
-        top: 100%;
-        border:1px solid white;
+        margin-top: 100vh; /* empurra abaixo da intro */
         z-index: 100;
-        gap:0px
     }
 
     .degrade {
@@ -99,7 +95,7 @@ const AboutMe = styled.div`
         left: 0%;
         top: 90%;
         color: transparent;
-        background: linear-gradient(to bottom, transparent, #fff);
+        background: linear-gradient(to bottom, transparent, #000000ff);
         z-index: 100;
     }
 
