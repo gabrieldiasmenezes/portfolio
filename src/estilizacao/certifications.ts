@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 const CertificationsS = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400&display=swap");
-
   .certificationsContainer {
     position: relative;
     display: flex;

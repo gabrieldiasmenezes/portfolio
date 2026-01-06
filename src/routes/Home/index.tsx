@@ -13,6 +13,7 @@ export default function Home() {
 
   return (
     <Style>
+      <NavBar />
       <main className="portfolioIntro">
         <h1 className="mainText"><Typewriter words={[text.mainText]} typeSpeed={50} cursor/></h1>
 
@@ -28,7 +29,6 @@ export default function Home() {
         </div>
       </main>
 
-      <NavBar />
       <Spline
         className="backgroundAnimation"
         scene="https://prod.spline.design/SIU5kmEWTMZ5NRZl/scene.splinecode"

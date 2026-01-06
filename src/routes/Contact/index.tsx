@@ -1,4 +1,3 @@
-"use client"
 import NavBar from "../../components/navBar";
 import ContactS from "../../estilizacao/contact";
 import Spline from "@splinetool/react-spline";
@@ -13,6 +12,8 @@ export default function Contato() {
 
   return (
     <ContactS>
+      
+      <NavBar/>
       <section className="contactContainer">
         <main className="content">
           <h1 className="heading">{text.title}</h1>
@@ -37,8 +38,6 @@ export default function Contato() {
           <Form language={language} />
         </main>
       </section>
-
-      <NavBar/>
 
       <Spline
         className="backgroundAnimation"

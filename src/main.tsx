@@ -30,10 +30,10 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <LanguageProvider>
+  <LanguageProvider>
+    <StrictMode>
       <GlobalStyle />
       <RouterProvider router={router} />
-    </LanguageProvider>
-  </StrictMode>
+    </StrictMode>
+  </LanguageProvider>
 );

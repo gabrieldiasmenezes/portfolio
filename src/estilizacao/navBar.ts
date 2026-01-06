@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const NavBarS = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400&display=swap");
 
   .menu-container {
     position: fixed;
@@ -54,15 +53,15 @@ const NavBarS = styled.div`
     background: rgba(255, 255, 255, 0.2);
   }
 
-  .menu-item img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
+  /* ===== ÍCONES (react-icons) ===== */
+  .menu-icon-item {
+    font-size: 28px;
+    color: white;
     transition: transform 0.3s ease;
   }
 
-  .menu-item:hover img {
-    transform: scale(1.1);
+  .menu-item:hover .menu-icon-item {
+    transform: scale(1.15);
   }
 
   .menu-label {
@@ -77,6 +76,7 @@ const NavBarS = styled.div`
     opacity: 0;
     transform: translateX(-10px);
     transition: all 0.3s ease;
+    pointer-events: none;
   }
 
   .menu-item:hover .menu-label {
@@ -124,32 +124,38 @@ const NavBarS = styled.div`
     transform: scale(1.1);
   }
 
+  /* ===== RESPONSIVO ===== */
   @media (max-width: 768px) {
     .menu-container {
       top: 5px;
       left: 5px;
     }
+
     .menu {
       padding: 8px;
     }
-    .menu-item img {
-      width: 30px;
-      height: 30px;
+
+    .menu-icon-item {
+      font-size: 24px;
     }
+
     .menu-label {
       font-size: 0.75rem;
       left: 50px;
     }
+
     .change-language {
       font-size: 0.85em;
       padding: 6px 12px;
       top: 5px;
       right: 5px;
     }
+
     .socialIcons {
       bottom: 10px;
       right: 10px;
     }
+
     .icons {
       font-size: 22px;
     }
@@ -159,25 +165,30 @@ const NavBarS = styled.div`
     .menu-icon {
       font-size: 1.8rem;
     }
+
     .menu-item {
       padding: 8px;
     }
-    .menu-item img {
-      width: 28px;
-      height: 28px;
+
+    .menu-icon-item {
+      font-size: 22px;
     }
+
     .menu-label {
       font-size: 0.7rem;
       left: 45px;
     }
+
     .change-language {
       font-size: 0.75em;
       padding: 5px 10px;
     }
+
     .socialIcons {
       bottom: 8px;
       right: 8px;
     }
+
     .icons {
       font-size: 20px;
     }
